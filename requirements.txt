@@ -1,0 +1,4 @@
+Flask
+Werkzeug
+flask-sqlalchemy==3.0.3 
+

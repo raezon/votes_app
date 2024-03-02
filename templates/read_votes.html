@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Votes</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Read Votes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Choix</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vote in votes %}
+                <tr>
+                    <td>{{ vote.name }}</td>
+                    <td>{{ vote.choice }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
